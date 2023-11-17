@@ -1,0 +1,226 @@
+
+
+
+
+/*Propriétés du bouton dark light*/
+body {
+    background-color: white;
+    color: black;
+  }
+  
+  .dark-mode {
+    background-color: #07143f;
+    color: white;
+  }
+  
+  #slider {
+    width: 50px;
+    height: 20px;
+    background-color: gray;
+    position: relative;
+    cursor: pointer;
+    border-radius: 10px;
+  }
+  
+  #slider:before {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    border-radius: 50%;
+    top: 0;
+    left: 0;
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .dark-mode #slider:before {
+    transform: translateX(30px);
+  }
+  
+  
+  
+  
+  /*Propriétes du convertisseur*/
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+    
+  }
+  
+  .part2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 0 10px;
+    background-image:url();
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+  
+  }
+  .anim {
+    width: 100%;
+    
+  
+  }
+  
+  h1 {
+    font-size: 3.3em;
+    letter-spacing: -2px;
+    font-weight: 700;
+    color: #4e47e6;
+  }
+  
+  .cssanimation, .cssanimation span {
+    animation-duration: 5s;
+    animation-fill-mode: both;
+  }
+  
+  .cssanimation span { display: inline-block }
+  
+  .open {
+    width: 473px;
+    margin: 0 auto;
+    overflow: hidden;
+    animation-name: open;
+  }
+  @keyframes open {
+    from { width: 0 }
+  }
+  
+  ::selection {
+    color: #000;
+    background: #fff;
+  }
+  
+  .wrapper {
+    width: 570px;
+    padding: 30px;
+    border: 5px solid #fab440;
+    border-radius: 20px;
+    background: #222;
+    box-shadow: 50px 50px 10px rgba(0, 0, 0, 0.2);
+    color: #fff;
+    margin-top: 0;
+    
+  }
+  
+  .wrapper header {
+    font-size: 28px;
+    font-weight: 500;
+    text-align: center;
+   background-color: transparent;
+  }
+  
+  .wrapper form {
+    margin: 40px 0 20px 0;
+    background-color: transparent;
+  }
+  
+  form :where(input, select, button) {
+    width: 100%;
+    outline: none;
+    border-radius: 5px;
+    border: none;
+    background: #444;
+    color: #fff;
+  }
+  
+  form p {
+    font-size: 18px;
+    margin-bottom: 5px;
+  }
+  
+  form input {
+    height: 50px;
+    font-size: 17px;
+    padding: 0 15px;
+    border: 1px solid #999;
+    background: #07143f;
+  }
+  
+  form input:focus {
+    padding: 0 14px;
+    border: 2px solid #675afe;
+    background: #07143f;
+  }
+  
+  form .drop-list {
+    display: flex;
+    margin-top: 20px;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .drop-list .select-box {
+    display: inline-block;
+    width: 105px;
+    height: 45px;
+    align-items: center;
+    border-radius: 5px;
+    justify-content: center;
+    border: 3px solid #fab440;
+    background: #fff;
+    color: #000;
+    
+  }
+  
+  .select-box img {
+    margin-top: 15px;
+    max-width: 19px;
+  }
+  
+  .select-box select {
+    width: auto;
+    font-size: 13px;
+    background: none;
+    margin: 0 -5px 0 5px;
+    color: #000;
+  }
+  
+  .select-box select::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  .select-box select::-webkit-scrollbar-track {
+    background: #fff;
+  }
+  
+  .select-box select::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 8px;
+    border-right: 2px solid #ffffff;
+  }
+  
+  .drop-list .icon {
+    cursor: pointer;
+    margin-top: 30px;
+    font-size: 22px;
+    color: #fff;
+  }
+  
+  form .exchange-rate {
+    font-size: 17px;
+    margin: 20px 0 30px;
+  }
+  
+  form button {
+    height: 52px;
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+    background: #07143f;
+    transition: background 0.3s ease, transform 0.2s ease;
+  }
+  
+  form button:hover {
+    background: #333;
+  }
+  
+  form button:active {
+    transform: scale(0.95);
+  }
